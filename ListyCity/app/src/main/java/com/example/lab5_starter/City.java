@@ -9,7 +9,9 @@ public class City implements Serializable {
     private String name;
     private String province;
 
+    private String docId;
     // constructor
+    public City(){}
     public City(String name, String province) {
         this.name = name;
         this.province = province;
@@ -29,5 +31,13 @@ public class City implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getDocId() {
+        return docId;
+    }
+
+    public void setDocId(String docId) {
+        this.docId = docId;
     }
 }
